@@ -4,7 +4,8 @@ class Character
 
     @@all = []
 
-    def initialize(name:, role:, house:, school:, boggart:, __v:, ministryOfMagic:, orderOfThePhoenix:, dumbledoresArmy:, deathEater:, bloodStatus:, species:)
+    def initialize(name:, role:, house:, school:, boggart:, __v:, ministryOfMagic:, orderOfThePhoenix:, dumbledoresArmy:, deathEater:, bloodStatus:, 
+        species:, patronus: nil, wand: nil, animagus: nil)
         self.name = name
         self.role = role
         self.house = house
@@ -17,6 +18,9 @@ class Character
         self.deathEater = deathEater
         self.bloodStatus = bloodStatus
         self.species = species
+        self.patronus = patronus
+        self.wand = wand
+        self.animagus = animagus
 
         self.save
     end

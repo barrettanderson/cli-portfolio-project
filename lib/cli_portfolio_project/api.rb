@@ -11,10 +11,26 @@ class API
         
         data.each do |character_data|
             name = character_data["name"]
+            role = character_data["role"]
+            house = character_data["house"]
+            school = character_data["school"]
+            boggart = character_data["boggart"]
+            __v = character_data["__v"]
+            ministryOfMagic = character_data["ministryOfMagic"]
+            orderOfThePhoenix = character_data["orderOfThePhoenix"]
+            dumbledoresArmy = character_data["dumbledoresArmy"]
+            deathEater = character_data["deathEater"]
+            bloodStatus = character_data["bloodStatus"]
+            species = character_data["species"]
+            
             binding.pry
         end
     end
-
+#(name:, role:, house:, school:, boggart:, __v:, ministryOfMagic:, orderOfThePhoenix:, dumbledoresArmy:, deathEater:, bloodStatus:, species:)
+#  , __v:,  )
+#   patronus,  alias, wand, animagus
+# (name:, role:, house:, school:, boggart:, __v:, ministryOfMagic:, orderOfThePhoenix:, dumbledoresArmy:, deathEater:, bloodStatus:, 
+#species:, patronus: nil, wand: nil, animagus: nil)
     
 
 end
