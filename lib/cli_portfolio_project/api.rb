@@ -15,22 +15,44 @@ class API
             house = character_data["house"]
             school = character_data["school"]
             boggart = character_data["boggart"]
-            __v = character_data["__v"]
             ministryOfMagic = character_data["ministryOfMagic"]
             orderOfThePhoenix = character_data["orderOfThePhoenix"]
             dumbledoresArmy = character_data["dumbledoresArmy"]
             deathEater = character_data["deathEater"]
             bloodStatus = character_data["bloodStatus"]
             species = character_data["species"]
-            
-            binding.pry
+            patronus = character_data["patronus"]
+            wand = character_data["wand"]
+            animagus = character_data["animagus"]
+            _id = character_data["_id"]
+            Character.new(
+                name: name,
+                role: role,
+                house: house,
+                school: school,
+                boggart: boggart,
+                ministryOfMagic: ministryOfMagic,
+                orderOfThePhoenix: orderOfThePhoenix,
+                dumbledoresArmy: dumbledoresArmy,
+                deathEater: deathEater, 
+                bloodStatus: bloodStatus,
+                species: species,
+                patronus: patronus,
+                wand: wand,
+                animagus: animagus,
+                _id: _id
+            )
+            # binding.pry
         end
     end
-#(name:, role:, house:, school:, boggart:, __v:, ministryOfMagic:, orderOfThePhoenix:, dumbledoresArmy:, deathEater:, bloodStatus:, species:)
-#  , __v:,  )
-#   patronus,  alias, wand, animagus
-# (name:, role:, house:, school:, boggart:, __v:, ministryOfMagic:, orderOfThePhoenix:, dumbledoresArmy:, deathEater:, bloodStatus:, 
-#species:, patronus: nil, wand: nil, animagus: nil)
-    
+
+    # def self.get_houses
+    #     response = RestClient.get(HP_URL + "houses?key=$2a$10$nVLwDQ7csF0ev7JYzI0o5ehb6SbGK.Ut6iFbN0zAJIUkbjECSEY3S")
+    #     data = JSON.parse(response)
+    #     binding.pry
+
+    #     # members of the houes are specific instances
+
+    # end
 
 end

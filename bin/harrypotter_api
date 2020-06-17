@@ -2,4 +2,10 @@
 
 require_relative "../lib/environment"
 
-API.get_characters
+# API.get_characters
+
+cli = Cli.new
+
+cli.run
+
+# API.get_houses
