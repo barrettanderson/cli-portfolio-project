@@ -1,5 +1,6 @@
 require 'pry'
 require 'rest-client'
+require 'json'
 
 require_relative "./cli_portfolio_project/version"
 require_relative "./cli_portfolio_project/api.rb"
