@@ -57,19 +57,26 @@ class Cli
         end
 
         found_character = Character.all.select.with_index(1) {|character, index| character.name == user_input || index == user_input}
-        binding.pry
+        # binding.pry
         if found_character.length == 0
                 invalid_character_input
                 get_user_character        
                 
         else
                current_character = found_character[0]
-                puts "Name: #{current_character.name}"
-                puts "House: #{current_character.house}"
-                puts "House = #{current_character.house}"
-                puts "Is this character a member of the Order of the Phoenix? #{current_character.orderOfThePhoenix}"
-                puts "If this character is an animagus, what animal does her form take? #{current_character.animagus}"
-              
+                puts "Name: #{current_character.name}."
+                puts "This character's role is #{current_character.role}."
+                puts "This character was or is in #{current_character.house} at #{current_character.school}."
+                puts "Is this character a member of Dumbledore's Army? #{current_character.dumbledoresArmy}."
+                puts "Is this character a member of the Order of the Phoenix? #{current_character.orderOfThePhoenix}."
+                puts "If this character is an animagus, what animal does her form take? #{current_character.animagus}."
+                puts "Is this character a Death Eater? #{current_character.deathEater}."
+                puts "Does this character work for the Ministry of Magic? #{current_character.ministryOfMagic}."
+                puts "Although a despicable classification, if you needed to know, this character's blood status is #{current_character.bloodStatus}."
+                puts "Back to some lighter discussions, do we know what form this character's patronus takes? #{current_character.patronus}."
+                puts "What form would your Boggart take? This character's boggart is #{current_character.boggart}.  If the answer is nil, who doesn't fear the unknown?!"
+                puts "Again, although I think unnecessary, if you must know their species they are #{current_character.species}."
+                puts "And lastly, here is what we know about their wand - #{current_character.wand}"
                 puts "~~~~~~~~~~~"
                 get_user_character
         end
