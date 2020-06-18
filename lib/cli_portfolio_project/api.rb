@@ -46,13 +46,5 @@ class API
         end
     end
 
-    # def self.get_houses
-    #     response = RestClient.get(HP_URL + "houses?key=$2a$10$nVLwDQ7csF0ev7JYzI0o5ehb6SbGK.Ut6iFbN0zAJIUkbjECSEY3S")
-    #     data = JSON.parse(response)
-    #     binding.pry
-
-    #     # members of the houes are specific instances
-
-    # end
 
 end

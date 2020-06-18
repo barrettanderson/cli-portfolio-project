@@ -8,4 +8,3 @@ cli = Cli.new
 
 cli.run
 
-# API.get_houses
