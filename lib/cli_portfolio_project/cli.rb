@@ -41,7 +41,7 @@ class Cli
         puts ""
         puts "~~~~~~~~~~~~~~"
         Character.all.each.with_index(1) do |character, index|
-            puts "Character - #{index} : #{character.name}"
+            puts "Character # #{index} : #{character.name}"
         end
         get_user_character
     end
@@ -55,7 +55,7 @@ class Cli
         end
 
         found_character = Character.all.select.with_index(1) {|character, index| character.name == user_input || index == user_input.to_i}
-        binding.pry
+        
         if found_character.length == 0
                 invalid_character_input
                 get_user_character
@@ -78,20 +78,6 @@ class Cli
                 puts "~~~~~~~~~~~"
                 get_user_character
         end
-            # if user_input == "#{character.name}"
-            #     # print "hello world"
-            #     puts "if"
-            # elsif user_input == "exit"
-            #     # puts "Apparating back to the Entrance Hall (don't worry we lifted the enchantment). Tuck your arms and legs."
-            #     # print_main_menu
-            #     puts "elsif"
-            # else
-            #     # invalid_character_input
-            #     # get_user_character
-            #     puts "else"
-            # end
-
-
     end
 
     def invalid_character_input

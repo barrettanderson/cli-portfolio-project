@@ -2,7 +2,6 @@
 
 require_relative "../lib/environment"
 
-# API.get_characters
 
 cli = Cli.new
 
