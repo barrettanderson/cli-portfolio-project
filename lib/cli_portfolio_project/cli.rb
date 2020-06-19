@@ -41,9 +41,7 @@ class Cli
         puts ""
         puts "~~~~~~~~~~~~~~"
         Character.all.each.with_index(1) do |character, index|
-            puts "Character #{index}."
-            puts "Character: #{character.name}"
-            # binding.pry
+            puts "Character - #{index} : #{character.name}"
         end
         get_user_character
     end
@@ -56,11 +54,11 @@ class Cli
                 print_main_menu
         end
 
-        found_character = Character.all.select.with_index(1) {|character, index| character.name == user_input || index == user_input}
-        # binding.pry
+        found_character = Character.all.select.with_index(1) {|character, index| character.name == user_input || index == user_input.to_i}
+        binding.pry
         if found_character.length == 0
                 invalid_character_input
-                get_user_character        
+                get_user_character
                 
         else
                current_character = found_character[0]
