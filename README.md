@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Run the program, it will take you into the first menu (hope you enjoy the Harry Potterisms).  Follow along with the prompts to get to the character screen, and then either search by name (complete, caps important) or by their number associated to find out more information about the characters.
 
 ## Development
 
